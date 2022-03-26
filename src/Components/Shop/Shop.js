@@ -15,7 +15,12 @@ const Shop = () => {
 
     const handleAddToCart = (product) => {
         console.log(product);
+        
         const newCart = [...cart, product];
+        
+        if(cart.length >= 4){
+            alert('Please Select 4 items');
+        }
         setCart(newCart);
     }
 
