@@ -4,7 +4,11 @@
 .Header{
   text-align: center;
 }
-
+.QuesAns{
+  text-align: center;
+  background-color: antiquewhite;
+  padding: 20px;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
