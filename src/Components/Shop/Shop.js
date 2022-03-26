@@ -14,7 +14,7 @@ const Shop = () => {
     },[]);
 
     const handleAddToCart = (product) => {
-        console.log(product);
+        // console.log(product);
         
         const newCart = [...cart, product];
         
@@ -26,6 +26,7 @@ const Shop = () => {
 
     return (
         <div className='shop-container'>
+            
             <div className="products-container">
                 {
                     products.map(product=><Product
@@ -34,10 +35,12 @@ const Shop = () => {
                     handleAddToCart={handleAddToCart}
                     ></Product>)
                 }
+                
             </div>
             <div className="cart-container">
                 <Cart cart={cart}></Cart>
             </div>
+            
         </div>
     );
 };

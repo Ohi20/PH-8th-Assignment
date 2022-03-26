@@ -1,13 +1,10 @@
 .App {
   text-align: center;
 }
+
 .Header{
   text-align: center;
-}
-.QuesAns{
-  text-align: center;
-  background-color: antiquewhite;
-  padding: 20px;
+  color: #C56C86;
 }
 .App-logo {
   height: 40vmin;

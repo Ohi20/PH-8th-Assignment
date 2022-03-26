@@ -3,27 +3,37 @@ import './Cart.css';
 
 const Cart = (props) => {
     const {cart} = props;
-    console.log(cart);
+    // console.log(cart);
     let total = 0;
     let productName= "";
-    
+        
     for(const product of cart){
         total = total + product.price;
-        productName = product.name;
-        
+        productName = productName+product.name;
+    }
+
+    const chooseOne = () => {
+         console.log("clicked");
+    
+    }
+    const removeItem = (product) => {
+        product.name = "";
     }
     
     const grandTotal = total; 
     return (
         <div className='cart'>
-            <h4>Order Summery</h4>
-            <p>Selected Items: {cart.length}</p>
+            <h2>Order Summery</h2>
+            <h4>Selected Items: {cart.length}</h4>
             <div>
-                <p>Product Name:{productName}</p>
+                <h2>Product Name:<br/>{productName}<br/></h2>
             </div>
-            <p>Total Price:${total}</p>
+            <h2>Total Price:${total}</h2>
             <h4>Grand Total:${grandTotal.toFixed(2)}</h4>
-            <button>Choose one for me</button>
+            <div>
+            <button className='cart-btn-1' onClick={chooseOne}>Choose one for me</button>
+            <button onClick={removeItem}>Remove</button>
+            </div>
         </div>
     );
 };
