@@ -1,6 +1,8 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Site Name: [Mouse Muse](https://remarkable-alfajores-f1de7a.netlify.app/).
+
+Site Link: [Link](https://remarkable-alfajores-f1de7a.netlify.app/).
 
 ## Available Scripts
 

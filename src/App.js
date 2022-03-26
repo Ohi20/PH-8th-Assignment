@@ -6,6 +6,7 @@ function App() {
   return (
     <div>
       <h1 className='Header'>Mouse Muse</h1>
+      <hr></hr>
       <Shop></Shop>
       <QuesAns></QuesAns>
       

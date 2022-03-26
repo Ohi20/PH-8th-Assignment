@@ -2,6 +2,7 @@ import React from 'react';
 import './Cart.css';
 
 const Cart = (props) => {
+    
     const {cart} = props;
     // console.log(cart);
     let total = 0;
@@ -12,12 +13,15 @@ const Cart = (props) => {
         productName = productName+product.name;
     }
 
-    const chooseOne = () => {
-         console.log("clicked");
+    const chooseOne = (product) => {
+         
     
     }
+    
     const removeItem = (product) => {
-        product.name = "";
+        
+        const newCart = [];
+        
     }
     
     const grandTotal = total; 
